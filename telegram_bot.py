@@ -8,8 +8,8 @@ import threading
 # 1. SETUP API KEYS SAFELY
 # ==========================================
 # We grab these from Render's Environment Variables so hackers can't see them!
-TELEGRAM_TOKEN = os.getenv("8894373340:AAH5AXJRFCw7PG5K7XDxruvi970F3zAyfJg")
-GEMINI_API_KEY = os.getenv("AIzaSyCdO2DgEIasdxY_JQI1IdWV_hVM8RXRx38")
+TELEGRAM_TOKEN = "8894373340:AAH5AXJRFCw7PG5K7XDxruvi970F3zAyfJg"
+GEMINI_API_KEY = "AIzaSyCdO2DgEIasdxY_JQI1IdWV_hVM8RXRx38"
 
 bot = telebot.TeleBot(TELEGRAM_TOKEN)
 client = genai.Client(api_key=GEMINI_API_KEY)
